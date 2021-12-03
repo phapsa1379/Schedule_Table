@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Scheduling plan</title>
+</head>
+<body dir="rtl">
+<main>
+    <div class="save-btn btns">ذخیره</div>
+    <div class="clear-btn btns">پاک کردن</div>
+    <div class="backup-btn btns">بازیابی</div>
+    <div class="export-btn btns">خروجی گرفتن</div>
+    <div class="guide-btn btns">راهنما</div>
+  <div class="table-container">
+      <table>
+          <tr>
+              <th>ساعت</th>
+              <th>شنبه</th>
+              <th>یک شنبه</th>
+              <th>دوشنبه</th>
+              <th>سه شنبه</th>
+              <th>چهارشنبه</th>
+              <th>پنج شنبه</th>
+              <th>جمعه</th>
+          </tr>
+
+
+      </table>
+  </div>
+
+    <div class="modal-container">
+        <div class="modal">
+            <div class="close-btn-modal"><img src="./assets/images/close.png" class="close-btn-modal-icon" alt="close" /></div>
+            <div class="modal-header">راهنما</div>
+            <div class="modal-text">
+                <div class="modal-text-title">درباره برنامه</div>
+                <p class="modal-text-explain">
+                    این برنامه برای مدیرت و زمانبندی کار ها نوشته شده است به این شکل که میتوانید لیست کارهایی که باید طی هر هفته انجام دهید را نوشته و در صورت انجام میتوانید آن را تیک بزنید (که به رنگ سبز در می آید که نشانه موفقیت آمیز بودن ) و یا در صورتی که به آن عمل نکردید ضربدر بزنید (که به رنگ قرمز در می آید که نشانه عدم موفقیت) است و به طور کلی در آخر هر هفته آمار خوبی از لیست کارهایی که انجام دادید و کارهایی که انجام ندادید به تفکیک رنگ خواهید داشت.
+                </p>
+                <div class="modal-text-title">نحوه ثبت کارها</div>
+                <p class="modal-text-explain">
+                    برای ثبت کاها تنها کافی است روی خانه مربوطه که باتوجه به ستون روز های هفته و سطر ساعت تقسیم بندی میشوند دوبار کلیک کرده که خانه مروبوطه از حالت فقط خواندنی (read only) تغییر پیدا کرده و قابل ویرایش باشد سپس پس از اعمال تغییرات(نوشتن یا ویرایش کردن) روی دکمه ذخیره که در سمت راست قرار دارد کلیک کنید.
+                    همچنین میتوانید کل خانه هایی را که میخواهید تغییر داده و سپس روی دکمه ذخیره کلیک نمایید (ذخیره گروهی اطلاعات).
+                </p>
+                <div class="modal-text-title">پاک کردن</div>
+                <p class="modal-text-explain">
+                    بااستفاده از دکمه پاک کردن میتوانید کل داده های جدول را پاک کنید (پاک کردن گروهی) و یا اینکه میتوانید با دابل کلیک روی هرخانه (قابل ویرایش شدن) فقط محتویات آن خانه را پاک کنید.
+                </p>
+                <div class="modal-text-title">بازیابی</div>
+                <p class="modal-text-explain">
+                   با استفاده از این دکمه میتوانید در شرایطی که اطلاعات به صورت ناخواسته پاک شده باشد (مثلا اشتباهی روی دکمه پاک کردن زده باشید ) اطلاعات را بازیابی کنید دقت کنید که این اطلاعات مربوط به آخرین تغییرات قبل از پاک کردن خواهد بود.
+                </p>
+
+                <div class="modal-text-title">خروجی گرفتن</div>
+                <p class="modal-text-explain">
+                   با استفاده از این دکمه قادر خواهید بود که اطلاعات مربوط به کل داده های جدول را به فرمت PDF خروجی بگیرید.
+                </p>
+                <div class="modal-text-title">ورژن برنامه</div>
+                <p class="modal-text-explain">
+                    version :1.1.0
+                </p>
+
+                <div class="modal-text-title">سازنده</div>
+                <p class="modal-text-explain">
+                    پاشا احمدی
+                    <div class="copyright" dir="ltr">© PGS 771</div>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="dark">
+    </div>
+</main>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

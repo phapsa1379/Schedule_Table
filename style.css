@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: vasir;
+}
+
+@font-face {
+    font-family: vasir;
+    src: url('./assets/Vazir-Medium.ttf');
+}
+
+@-webkit-keyframes slide-fwd-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    100% {
+        -webkit-transform: translateZ(160px);
+        transform: translateZ(160px);
+    }
+}
+@keyframes slide-fwd-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    100% {
+        -webkit-transform: translateZ(160px);
+        transform: translateZ(160px);
+    }
+}
+.slide-fwd-center {
+    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+main{
+    text-align: right;
+    /*padding: 50px;*/
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.table-container
+{
+    padding: 50px;
+}
+
+table
+{
+    padding: 2rem 4rem;
+    border-collapse: collapse;
+}
+th
+{
+    font-size: 25px;
+    padding: 4rem 6rem;
+    background-color: #4b7bec;
+    color: white;
+}
+
+td
+{
+    font-size: 20px;
+    padding: 5px;
+    position: relative;
+}
+
+th,td
+{
+
+    border: 3px solid #182C61;
+    text-align:center;
+
+    height: 160px;
+    width: 250px;
+}
+
+.aria
+{
+    height: 80%;
+    width: 100%;
+    padding: 5px 10px;
+    border: none!important;
+    font-size: 20px;
+    overflow: scroll;
+    /*display: none;*/
+}
+
+.aria:focus
+{
+    outline: none;
+}
+.add-tr
+{
+    padding: 5px 10px;
+}
+.save-btn
+{
+    background-color: #ffa801;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.btns
+{
+    position: fixed;
+
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    /*padding: 3.5rem 2.75rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    right: 0;
+    transform: translate(0,-50%);
+    font-weight: bold;
+}
+
+
+
+.clear-btn
+{
+    background-color: #eb3b5a;
+    top: 38%;
+    font-size: 16px!important;
+
+}
+.guide-btn
+{
+    background-color: #a55eea;
+    top: 26%;
+    font-size: 16px!important;
+
+}
+.export-btn
+{
+    background-color: #2d98da;
+    top: 74%;
+    font-size: 16px!important;
+
+}
+
+.backup-btn
+{
+    background-color: #079992;
+    top: 62%;
+    font-size: 16px!important;
+}
+
+
+
+.hour
+{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #2980b9;
+    color: white;
+    position: unset;
+}
+.done-btn
+{
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    background-color:#009432;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    color: white;
+    cursor:pointer;
+    font-size: 20px;
+    padding: 4px;
+}
+.not-done-btn
+{
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    background-color:#EA2027;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    cursor:pointer;
+    font-size: 20px;
+    padding: 4px;
+}
+.done-btn:hover,.not-done-btn:hover
+{
+    opacity: 0.85;
+}
+.modal-container
+{
+    position: fixed;
+    left: 50%;
+    top: 50rem;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 90rem;
+    background-color:whitesmoke;
+    z-index:100;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 5px solid #eb3b5a;
+    display: none;
+}
+.close-btn-modal
+{
+    display: inline-block;
+}
+.close-btn-modal-icon
+{
+    height: 30px;
+    width: 30px;
+    cursor:pointer;
+}
+.close-btn-modal-icon:hover
+{
+    opacity: 0.9;
+}
+
+.modal-header
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2C3A47;
+}
+.modal-text
+{
+    height: auto;
+    overflow: scroll!important;
+}
+.modal-text-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #EA2027;
+}
+
+.modal-text-explain
+{
+    font-size: 16px;
+    color: #222f3e;
+    margin-bottom: 1.5rem;
+}
+
+.dark
+{
+    width: 100%;
+    height:4110px;
+    background-color:#222f3e;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 80;
+    display: none;
+}
+
+.copyright
+{
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}
